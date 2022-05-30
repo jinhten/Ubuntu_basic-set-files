@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/p4ws/zibServer/ZibLinux/src'
+let g:netrw_dirhist_4='/p4ws/zibServer/ZibWindows/prj/zibwin'
+let g:netrw_dirhist_3='/p4ws/zibServer/ZibRTC/zibRtc/src'
+let g:netrw_dirhist_2='/p4ws/zibServer/ZibWindows_Linux/src'
+let g:netrw_dirhist_1='/home/kktjin/mycode/c++/src'
+let g:netrw_dirhist_0='/home/kktjin/mycode/test/mytest'
+let g:netrw_dirhist_9='/home/kktjin/shell'
+let g:netrw_dirhist_8='/p4ws/zibServer/ZibRTC/zibComm/hdr'
+let g:netrw_dirhist_7='/home/kktjin/mycode/test/thread/mythread/src'
+let g:netrw_dirhist_6='/home/kktjin/mycode/quic/src'

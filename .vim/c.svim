@@ -1,0 +1,21 @@
+if highlight_exists("cTodo")
+    syntax clear   cTodo
+endif
+if highlight_exists("gTodo")
+    syntax clear   gTodo
+endif
+if highlight_exists("gComment")
+    syntax clear   gComment
+endif
+if highlight_exists("cOctalError")
+    " work-around for MCC68K inline assembly
+    syn clear cOctalError
+endif
+syntax keyword cTodo contained TODO FIXME CAUTION NOTE
+syntax keyword cType           bit boolean byte word16 word32 word64 word96 word128
+syntax keyword cType           word int8 int16 int32 int64 dword tword qword
+syntax keyword cType           __inline__ inline __volatile__ interrupt
+syntax keyword cStatement      __asm__
+
+" work-around for MCC68K inline assembly
+syn match cNumber "\$[0-9a-fA-F]\+"

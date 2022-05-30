@@ -1,0 +1,3 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/vita01_ws/wonhee.yee/wonhee_SCR800_GLB_vMME_Vita01/DEV/CORE/SCR800K/Middleware/AGW_CALL_LIB'
