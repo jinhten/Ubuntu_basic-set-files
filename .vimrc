@@ -26,6 +26,23 @@ filetype on "vim filetype on
       let Tlist_Auto_Open = 0
       let Tlist_Use_Right_Window = 1
 
+
+" vim 자동완성
+
+"complete 옵션
+":set complete?
+"complete=.,w,b,u,t,i
+" .: 현재 편집중인 버퍼의 모든 단어를 자동완성 소스로 사용한다.
+" w: vim에 현재 열려 있는 window들의 모든 단어를 사용한다.
+" b: 버퍼 리스트에 있고 로드된 버퍼들의 모든 단어를 사용한다.
+" u: 버퍼 리스트에 있고 로드되지 않은 버퍼들의 모든 단어를 사용한다.
+" t: tag completion을 사용한다. ctags를 사용한다면 당연한 설정.
+" i: 현재 파일과 include된 파일의 단어를 사용한다.
+" :help complete로 확인.
+
+" https://johngrib.github.io/wiki/vim/auto-completion/
+
+
 " 
 map <F5> :call P4Edit()<CR>
 map <F6> :call P4Revert()<CR>
@@ -40,13 +57,15 @@ set hlsearch
 set laststatus=2
 set t_Co=256
 
-"set tags+=$HOME/mycode/http3/opensource/libquic/tags
-"set tags+=$HOME/mycode/http3/opensource/msquic/src/tags
-"set tags+=$HOME/mycode/quic/tags
+"set tags+=$HOME/mycode/opensource/libquic/tags
+set tags+=$HOME/mycode/opensource/msquic/src/tags
+set tags+=$HOME/mycode/quic/tags
 "set tags+=$HOME/mycode/test/tags
-set tags+=$HOME/zibsvr/ZibRTC/tags
-set tags+=$HOME/zibsvr/ZibWindows/tags
-set tags+=$HOME/zibsvr/ZibWindows_Linux/tags
+"set tags+=/p4ws/zibServer/ZibRTC/tags
+set tags+=/p4ws/zibServer/km7/tags
+set tags+=/p4ws/zibServer/zibLinux/tags
+"set tags+=/p4ws/zibServer/ZibNet_Linux/tags
+"set tags+=/p4ws/zibServer/ZibRTC_Linux/tags
 
 colorscheme molokai
 if v:version >= 700
